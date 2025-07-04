@@ -1,17 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Therian Sciences</title>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <title>{{ title }}</title>
 </head>
 <body>
-  <header>
-    <h1>Therian Sciences Blog</h1>
-    <nav><a href="/">Home</a></nav>
-  </header>
-
-  <footer>
-    <p>Built with Eleventy</p>
-  </footer>
+  {{ content | safe }}
 </body>
 </html>
