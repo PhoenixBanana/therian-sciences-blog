@@ -23,6 +23,11 @@ jobs:
       - name: Make Eleventy executable
         run: chmod +x ./node_modules/.bin/eleventy
 
+      - name: Configure Git for Actions
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Build site with Eleventy
         run: npx @11ty/eleventy
 
