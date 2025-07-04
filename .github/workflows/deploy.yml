@@ -1,5 +1,3 @@
-# Force deploy attempt
-
 name: Deploy Eleventy to GitHub Pages
 
 on:
