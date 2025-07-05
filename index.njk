@@ -1,0 +1,14 @@
+---
+title: Therian Sciences Blog
+layout: base.njk
+---
+
+<h1>Welcome to the Therian Sciences Blog</h1>
+
+<div class="post-list">
+  {% for post in collections.post %}
+    <article class="post-tile">
+      {{ post.templateContent | safe }}
+    </article>
+  {% endfor %}
+</div>

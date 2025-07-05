@@ -1,0 +1,29 @@
+1. Go to the 'posts' folder
+2. Create a new markup file (Title it like this: 'YYYY-MM-DD-title-of-the-post.md')
+3. Add content and set the title and layout as demonstrated below:
+
+	---
+	title: The Demonstration
+	layout: post.njk
+	---
+
+	**Posted October 12, 1968**
+
+	Here is some text, that would be displayed if this was a .md file being uploaded to the blog.
+
+4. Rebuild the site, using the following instructions:
+	1. Go to command prompt
+	2. To start editing the blog's files, type the following:
+		cd therian-sciences-blog
+	3. To rebuild the site, enter the following:
+		npx @11ty/eleventy
+	4. Confirm that the output given is:
+		[11ty] Wrote [X] files in [X] seconds (v3.1.2)
+5. Go to _site/index.html (File Explorer) and open the index.html
+6. Run and Debug to confirm that the new entry is shown on the site.
+7. To stage, commit, and push the changes to GitHub, enter the following commands into command prompt:
+	1. git add .
+	2. git commit -m "Commit message goes here"
+	3. git push
+
+-END-
